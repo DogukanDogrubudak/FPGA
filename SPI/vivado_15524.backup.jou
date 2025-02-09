@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sat Feb  8 15:35:48 2025
+# Process ID: 15524
+# Current directory: C:/FPGA/SPI
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14116 C:\FPGA\SPI\SPI.xpr
+# Log file: C:/FPGA/SPI/vivado.log
+# Journal file: C:/FPGA/SPI\vivado.jou
+# Running On        :DESKTOP-MPGFPTO
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :AMD Ryzen 5 4600H with Radeon Graphics         
+# CPU Frequency     :2994 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :7916 MB
+# Swap memory       :11811 MB
+# Total Virtual     :19727 MB
+# Available Virtual :11005 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/FPGA/SPI/SPI.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_simulation
+source SPI_TB.tcl
+close_sim
+launch_simulation
+source SPI_TB.tcl
+close_sim
+launch_simulation
+source SPI_TB.tcl
+close_sim
